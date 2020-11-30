@@ -1,9 +1,0 @@
-$clr-1: #5c6e91;
-
-body {
-  background-color: $clr-1;
-  display: grid;
-    transition: all .5s;
-    user-select: none;
-    background: linear-gradient(to bottom, $clr-1, white);
-}
