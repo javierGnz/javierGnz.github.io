@@ -1,0 +1,16 @@
+:root {
+  --clr-1: #F4FCFB;
+  --clr-2: #272643;
+  --ff-heading: 'Crete Round', serif;
+  --ff-body: 'ABeeZee', sans-serif;
+}
+
+html {
+  background: linear-gradient(to bottom, var(--clr-1), rgba(#F3FFFF, 0.63));
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--ff-body);
+  position: relative;
+}
