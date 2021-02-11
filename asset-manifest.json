@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/javiergnz.github.io/static/css/main.84079273.chunk.css",
-    "main.js": "/javiergnz.github.io/static/js/main.149e0b2f.chunk.js",
-    "main.js.map": "/javiergnz.github.io/static/js/main.149e0b2f.chunk.js.map",
+    "main.css": "/javiergnz.github.io/static/css/main.ab362d86.chunk.css",
+    "main.js": "/javiergnz.github.io/static/js/main.64196288.chunk.js",
+    "main.js.map": "/javiergnz.github.io/static/js/main.64196288.chunk.js.map",
     "runtime-main.js": "/javiergnz.github.io/static/js/runtime-main.0172d4b7.js",
     "runtime-main.js.map": "/javiergnz.github.io/static/js/runtime-main.0172d4b7.js.map",
     "static/js/2.d85fa2ca.chunk.js": "/javiergnz.github.io/static/js/2.d85fa2ca.chunk.js",
     "static/js/2.d85fa2ca.chunk.js.map": "/javiergnz.github.io/static/js/2.d85fa2ca.chunk.js.map",
     "index.html": "/javiergnz.github.io/index.html",
-    "static/css/main.84079273.chunk.css.map": "/javiergnz.github.io/static/css/main.84079273.chunk.css.map",
+    "static/css/main.ab362d86.chunk.css.map": "/javiergnz.github.io/static/css/main.ab362d86.chunk.css.map",
     "static/js/2.d85fa2ca.chunk.js.LICENSE.txt": "/javiergnz.github.io/static/js/2.d85fa2ca.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0172d4b7.js",
     "static/js/2.d85fa2ca.chunk.js",
-    "static/css/main.84079273.chunk.css",
-    "static/js/main.149e0b2f.chunk.js"
+    "static/css/main.ab362d86.chunk.css",
+    "static/js/main.64196288.chunk.js"
   ]
 }
