@@ -1,8 +1,8 @@
 :root {
   --clr-1: #F4FCFB;
-  --clr-2: #272643;
+  --clr-2: #050E12;;
   --ff-heading: 'Crete Round', serif;
-  --ff-body: 'ABeeZee', sans-serif;
+  --ff-body: 'Exo', sans-serif;
 }
 
 html {
@@ -11,6 +11,7 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: var(--ff-body);
+  // font-family: var(--ff-body);
+  font-family: Arial, Helvetica, sans-serif;
   position: relative;
 }

@@ -1,11 +1,11 @@
 import React from 'react'
 import './assets/scss/app.scss'
-import Header from './components/Header'
+import Landing from './components/Landing'
 
 const App = () => {
   return (
     <div className="wrapper">
-      <Header />
+      <Landing />
     </div>
   )
 }
