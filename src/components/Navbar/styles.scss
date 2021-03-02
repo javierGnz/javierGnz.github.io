@@ -1,0 +1,19 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-between;
+
+  &__logo {
+    display: inline-block;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    z-index: 203;
+
+    svg {
+      width: 2.45rem;
+      height: 2.45rem;
+    }
+  }
+}

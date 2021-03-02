@@ -1,0 +1,100 @@
+.menu {
+    // position: absolute;
+    // top: 1.75rem;
+    // right: 1rem;
+
+    &__toggle {
+        position: absolute;
+        top: 1.75rem;
+        right: 1rem;
+        z-index: 203;
+        width: 1.575rem;
+        height: 1rem;
+        cursor: pointer;
+
+        span {
+            position: absolute;
+            right: 0;
+            display: block;
+            margin-left: auto;
+            height: 0.125rem;
+            background-color: #000;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+                opacity 0.2s ease-out;
+
+            &:nth-child(1) {
+                top: 0;
+                width: 87%;
+            }
+
+            &:nth-child(2) {
+                top: 7px;
+                width: 100%;
+            }
+
+            &:nth-child(3) {
+                top: 14px;
+                width: 67.5%;
+            }
+        }
+
+        &--active {
+            span {
+                &:nth-child(1) {
+                    width: 100%;
+                    transform: translateY(7px) rotateZ(-135deg);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:nth-child(3) {
+                    width: 100%;
+                    transform: translateY(-7px) rotateZ(135deg);
+                }
+            }
+        }
+    }
+
+    &__overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 201;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--clr-1);
+        transform: translateY(-100%);
+    }
+
+    &__list {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 201;
+        display: flex;
+        visibility: hidden;
+        flex-direction: column;
+        margin: 3.75rem auto;
+        margin-top: 10vh;
+        padding: 2rem 1rem;
+    }
+
+    &__item {
+        display: block;
+        color: var(--clr-2);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.875rem;
+        opacity: 0;
+        transform: translateY(-20px);
+        pointer-events: none;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+}

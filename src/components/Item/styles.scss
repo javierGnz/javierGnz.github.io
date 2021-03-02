@@ -1,0 +1,16 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid var(--clr-2);
+
+    &__icon {
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        font-weight: 500;
+    }
+}

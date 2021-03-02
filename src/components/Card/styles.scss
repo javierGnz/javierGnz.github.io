@@ -1,0 +1,23 @@
+.card {
+  padding: 1rem;
+  background-color: var(--clr-1);
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &__brand {
+      text-transform: uppercase;
+      font-weight: 100;
+      opacity: 0.75;
+      font-size: 0.75rem;
+      margin-bottom: 0.25rem;
+  }
+
+  &__text {
+      font-weight: 600;
+      margin-bottom: 2rem;
+      font-size: 1.3125rem;
+      line-height: 1.5;
+  }
+}

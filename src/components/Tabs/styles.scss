@@ -1,0 +1,27 @@
+.tabs {
+    &__nav {
+        display: flex;
+        overflow: auto;
+        margin-bottom: 1rem;
+    }
+
+    &__nav-item {
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+
+    &__content {
+        display: flex;
+        overflow: auto;
+    }
+
+    &__content-item {
+        flex-grow: 1;
+        flex-shrink: 0;
+        width: 100%;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+    }
+}
