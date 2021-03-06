@@ -10,7 +10,7 @@ const Header = () => {
           <h1>Javier Gonzalez.</h1>
         </div>
         <div className="header__text">
-          <p>Un desarrollador front-end y a veces un diseñador web.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor fugiat nostrum, possimus esse debitis dolores.</p>
         </div>
       </div>
       <div className="header__img">

@@ -1,6 +1,14 @@
+@import '../../assets/scss/abstracts/mixins.scss';
+
 .header {
   padding: 0 1rem;
   padding-top: 12vmin;
+
+  @include respond-to(md) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
   
   &__title {
     font-family: var(--ff-head);

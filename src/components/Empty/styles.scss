@@ -1,0 +1,12 @@
+.empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+
+    &__icon {
+        width: 4rem;
+        height: 4rem;
+    }
+}
