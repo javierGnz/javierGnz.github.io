@@ -3,13 +3,11 @@ import './styles.scss'
 
 const Card = (props) => {
     return (
-        <div className="card">
+        <a className="card" href={props.link} target="_blank" rel="noreferrer">
+            <img className="card__img" src={props.img} alt={props.title}/>
             <h4 className="card__brand">{props.title}</h4>
             <p className="card__text">{props.about}</p>
-            <div className="card__img">
-                <img src={props.img} alt={props.title}/>
-            </div>
-        </div>
+        </a>
     )
 }
 

@@ -1,3 +1,5 @@
+@import '../../assets/scss/abstracts/mixins.scss';
+
 .menu {
     // position: absolute;
     // top: 1.75rem;
@@ -11,6 +13,10 @@
         width: 1.575rem;
         height: 1rem;
         cursor: pointer;
+
+        @include respond-to(sm) {
+            display: none;
+        }
 
         span {
             position: absolute;
@@ -81,6 +87,14 @@
         margin: 3.75rem auto;
         margin-top: 10vh;
         padding: 2rem 1rem;
+
+        @include respond-to(sm) {
+            position: static;
+            visibility: visible;
+            flex-direction: row;
+            margin: auto;
+            padding: initial;
+        }
     }
 
     &__item {
@@ -93,8 +107,20 @@
         transform: translateY(-20px);
         pointer-events: none;
 
+        @include respond-to(sm) {
+            font-size: 1.125rem;
+            opacity: 1;
+            transform: translateX(0);
+            pointer-events: auto;
+        }
+
         &:not(:last-child) {
             margin-bottom: 2rem;
+
+            @include respond-to(sm) {
+                margin-right: 1rem;
+                margin-bottom: 0;
+            }
         }
     }
 }

@@ -1,30 +1,46 @@
 @import '../../assets/scss/abstracts/mixins.scss';
 
 .header {
-  padding: 0 1rem;
-  padding-top: 12vmin;
+    padding: 0 1rem;
+    padding-top: 12vmin;
 
-  @include respond-to(md) {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
-  
-  &__title {
-    font-family: var(--ff-head);
-    margin-bottom: 0.5rem;
-
-    h1 {
-      font-size: 8vmin;
-      font-weight: 600;
+    @include respond-to(xs) {
+        max-width: 560px;
+        margin-right: auto;
+        margin-left: auto;
     }
-  }
+    @include respond-to(sm) {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        max-width: 760px;
+    }
+    @include respond-to(md) {
+        max-width: 980px;
+    }
+    @include respond-to(lg) {
+        max-width: 1170px;
+    }
 
-  &__text {
-    font-weight: 300;
-  }
+    &__title {
+        margin-bottom: 0.5rem;
+        font-family: var(--ff-head);
 
-  &__img {
-    padding: 10vmin;
-  }
+        h1 {
+            font-weight: 600;
+            font-size: 8vmin;
+
+            @include respond-to(xs) {
+                font-size: 2.25rem;
+            }
+        }
+    }
+
+    &__text {
+        font-weight: 300;
+    }
+
+    &__img {
+        padding-left: 10vmin;
+    }
 }

@@ -1,19 +1,47 @@
+@import '../../assets/scss/abstracts/mixins.scss';
+
 .navbar {
-  display: flex;
-  align-items: center;
-  padding: 1rem;
-  justify-content: space-between;
-
-  &__logo {
-    display: inline-block;
-    position: absolute;
-    left: 1rem;
-    top: 1rem;
-    z-index: 203;
-
-    svg {
-      width: 2.45rem;
-      height: 2.45rem;
+    @include respond-to(sm) {
+        border-bottom: 1px solid rgba(0,0,0,0.1);
     }
-  }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0.75rem 1rem;
+
+        @include respond-to(xs) {
+            position: relative;
+            max-width: 560px;
+        }
+        @include respond-to(sm) {
+            max-width: 760px;
+        }
+        @include respond-to(md) {
+            max-width: 980px;
+        }
+        @include respond-to(lg) {
+            max-width: 1170px;
+        }
+    }
+
+    &__logo {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        z-index: 203;
+        display: inline-flex;
+
+        @include respond-to(sm) {
+            position: static;
+        }
+
+        svg {
+            width: 2.45rem;
+            height: 2.45rem;
+        }
+    }
 }

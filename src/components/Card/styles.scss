@@ -1,23 +1,43 @@
 .card {
-  padding: 1rem;
-  background-color: var(--clr-1);
+    display: block;
+    padding: 1rem;
+    color: var(--clr-1);
+    overflow: hidden;
+    position: relative;
+    min-height: 27.5rem;
+    text-decoration: none;
 
-  &:not(:last-child) {
-    margin-bottom: 1rem;
-  }
+    &:not(:last-child) {
+        margin-bottom: 1rem;
+    }
 
-  &__brand {
-      text-transform: uppercase;
-      font-weight: 100;
-      opacity: 0.75;
-      font-size: 0.75rem;
-      margin-bottom: 0.25rem;
-  }
+    &__img {
+        left: 0;
+        top: 0;
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: all 0.3s linear;
+    }
 
-  &__text {
-      font-weight: 600;
-      margin-bottom: 2rem;
-      font-size: 1.3125rem;
-      line-height: 1.5;
-  }
+    &__brand {
+        text-transform: uppercase;
+        font-weight: 100;
+        opacity: 0.75;
+        font-size: 0.75rem;
+        margin-bottom: 0.25rem;
+    }
+
+    &__text {
+        font-weight: 600;
+        margin-bottom: 2rem;
+        font-size: 1.3125rem;
+        line-height: 1.5;
+    }
+
+    &:hover &__img {
+        transform: scale(1.1);
+    }
 }

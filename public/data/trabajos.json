@@ -2,13 +2,19 @@
     {
       "company": "Imperial",
       "about": "Eiusmod ad sint dolor deserunt cupidatat sint",
-      "background": "https://via.placeholder.com/500/28527a",
+      "background": "https://i.ibb.co/MyHG0hb/pexels-diogo-brandao-3116113.jpg",
       "link": "https://github.com/javierGnz/ferreteria"
     },
     {
         "company": "BernyCare",
         "about": "Ut enim ad minim veniam",
-        "background": "https://via.placeholder.com/500/f9f3f3",
+        "background": "https://i.ibb.co/g6QVydG/pexels-gift-habeshaw-5820103.jpg",
         "link": "https://github.com/javierGnz/ferreteria"
-      }
+    },
+    {
+        "company": "Transbank",
+        "about": "Officia ipsa at accusantium minus asperiores",
+        "background": "https://i.ibb.co/B4FZ7dD/pexels-rotekirsche-5438822.jpg",
+        "link": "https://github.com/javierGnz/ferreteria"
+    }
 ]

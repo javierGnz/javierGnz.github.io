@@ -35,18 +35,21 @@ const Work = () => {
                     'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
                 }
             />
-            {dataWorks.length > 0 ? (
-                dataWorks.map((item, index) => (
-                    <Card
-                        key={index}
-                        title={item.company}
-                        about={item.about}
-                        img={item.background}
-                    />
-                ))
-            ) : (
-                <Empty />
-            )}
+            <div className="work__items">
+                {dataWorks.length > 0 ? (
+                    dataWorks.map((item, index) => (
+                        <Card
+                            key={index}
+                            title={item.company}
+                            about={item.about}
+                            img={item.background}
+                            link={item.link}
+                        />
+                    ))
+                ) : (
+                    <Empty />
+                )}
+            </div>
         </div>
     )
 }

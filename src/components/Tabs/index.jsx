@@ -1,28 +1,73 @@
-import React from 'react'
-import Item from '../Item'
+import React, { useEffect, useState } from 'react'
+import TabPane from './TabPane'
 import './styles.scss'
 
-const Tabs = () => {
+const Tabs = (props) => {
+    const { children } = props
+    const [tabHeader, setTabHeader] = useState([])
+    const [childContent, setChildConent] = useState({})
+    const [active, setActive] = useState('')
+    useEffect(() => {
+        const headers = []
+        const childCnt = {}
+        React.Children.forEach(children, (element) => {
+            if (!React.isValidElement(element)) return
+            const { name } = element.props
+            headers.push(name)
+            childCnt[name] = element.props.children
+        })
+        setTabHeader(headers)
+        setActive(headers[0])
+        setChildConent({ ...childCnt })
+        console.log(childCnt)
+    }, [props, children])
+
+    const changeTab = (name) => {
+        setActive(name)
+    }
+
     return (
         <div className="tabs">
-            <nav className="tabs__nav">
-                <div className="tabs__nav-item">Front-end</div>
-                <div className="tabs__nav-item">Diseñador</div>
-            </nav>
+            <ul className="tabs__nav">
+                {tabHeader.map((item, index) => (
+                    <li
+                        onClick={() => changeTab(item)}
+                        key={index}
+                        className={item === active ? 'tabs__nav-item tabs__nav-item--active' : 'tabs__nav-item'}
+                    >
+                        {item}
+                    </li>
+                ))}
+            </ul>
             <div className="tabs__content">
-                <div className="tabs__content-item">
-                    {Array(5)
-                    .fill()
-                    .map((e, i) => (
-                        <Item key={i} />
-                    ))}
-                </div>
-                <div className="tabs__content-item">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fugiat accusantium unde. Officia ipsa at accusantium minus asperiores repudiandae hic porro? Soluta voluptatum animi debitis sunt esse. Ab, eius minima?</p>
-                </div>
+                {Object.keys(childContent).map((key, index) => {
+                    if (key === active) {
+                        return <div className="tabs__content-item" key={index}>{childContent[key]}</div>
+                    } else {
+                        return null
+                    }
+                })}
             </div>
         </div>
     )
+}
+
+Tabs.propTypes = {
+    children: function (props, propName, componentName) {
+        const prop = props[propName]
+
+        let error = null
+        React.Children.forEach(prop, function (child) {
+            if (child.type !== TabPane) {
+                error = new Error(
+                    '`' +
+                        componentName +
+                        '` children should be of type `TabPane`.'
+                )
+            }
+        })
+        return error
+    },
 }
 
 export default Tabs
