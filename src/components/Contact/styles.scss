@@ -1,3 +1,37 @@
 .contact {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+
+    p {
+        margin-bottom: 3rem;
+
+        a {
+            color: var(--clr-1);
+            text-decoration: none;
+            font-weight: 600;
+        }
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+        list-style: none;
+
+        li {
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+
+            a {
+                display: inline-flex;
+                text-decoration: none;
+                transition: all 0.3s;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
 }

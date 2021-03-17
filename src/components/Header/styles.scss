@@ -1,46 +1,97 @@
-@import '../../assets/scss/abstracts/mixins.scss';
+@import '../../assets/scss/abstracts/mixins';
 
 .header {
     padding: 0 1rem;
-    padding-top: 12vmin;
+    padding-top: 18vmin;
+    padding-bottom: 6rem;
 
     @include respond-to(xs) {
-        max-width: 560px;
         margin-right: auto;
         margin-left: auto;
+        padding-top: 6rem;
+        max-width: 560px;
     }
     @include respond-to(sm) {
         display: flex;
         align-items: center;
-        padding: 1rem;
+        padding: 9.25rem 1rem;
         max-width: 760px;
     }
     @include respond-to(md) {
         max-width: 980px;
     }
     @include respond-to(lg) {
+        padding: 10rem 1rem;
         max-width: 1170px;
     }
 
+    &__intro {
+        margin-bottom: 5rem;
+        width: 100%;
+
+        @include respond-to(sm) {
+            margin-bottom: 0;
+            width: 60%;
+        }
+        @include respond-to(lg) {
+            width: 50%;
+        }
+    }
+
     &__title {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.575rem;
         font-family: var(--ff-head);
 
         h1 {
+            letter-spacing: -2px;
             font-weight: 600;
             font-size: 8vmin;
+            line-height: 1.23;
 
             @include respond-to(xs) {
-                font-size: 2.25rem;
+                font-size: 2.45rem;
+            }
+            @include respond-to(md) {
+                letter-spacing: -3px;
+                font-size: 3.25rem;
+            }
+            @include respond-to(lg) {
+                font-size: 3.675rem;
+                line-height: 1.3;
             }
         }
     }
 
     &__text {
         font-weight: 300;
+
+        @include respond-to(xs) {
+            font-size: 1.15rem;
+        }
+        @include respond-to(md) {
+            max-width: 90%;
+            font-size: 1.25rem;
+        }
+        @include respond-to(lg) {
+            max-width: 100%;
+            font-size: 1.475rem;
+        }
     }
 
     &__img {
-        padding-left: 10vmin;
+        width: 100%;
+        // padding-left: 10vmin;
+        text-align: center;
+
+        @include respond-to(sm) {
+            width: 40%;
+        }
+        @include respond-to(lg) {
+            width: 50%;
+        }
+
+        svg {
+            width: 50%;
+        }
     }
 }

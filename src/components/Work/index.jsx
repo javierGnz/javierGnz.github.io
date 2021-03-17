@@ -29,12 +29,8 @@ const Work = () => {
 
     return (
         <div id="work" className="work">
-            <Title
-                title={'Trabajos'}
-                subtitle={
-                    'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
-                }
-            />
+            <Title title={'Trabajos'} />
+            <p class="font-wght-300">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
             <div className="work__items">
                 {dataWorks.length > 0 ? (
                     dataWorks.map((item, index) => (

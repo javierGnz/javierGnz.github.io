@@ -1,13 +1,12 @@
 import React from 'react'
 import './styles.scss'
 
-const Title = (props) => {
-  return (
-    <div className="title">
-      <h2>{props.title}</h2>
-      <p>{props.subtitle}</p>
-    </div>
-  )
+const Title = ({ title }) => {
+    return (
+        <div className="title">
+            <h2>{title}</h2>
+        </div>
+    )
 }
 
 export default Title

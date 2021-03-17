@@ -1,26 +1,23 @@
 .wrapper {
-  min-height: 100vh;
-  width: 100vw;
+    min-height: 100vh;
+    width: 100vw;
 
-  &__content {
-    padding: 0 1rem;
-    margin-left: auto;
-    margin-right: auto;
+    &__content {
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0 1rem;
 
-    @include respond-to(xs) {
-        max-width: 560px;
+        @include respond-to(xs) {
+            max-width: 560px;
+        }
+        @include respond-to(sm) {
+            max-width: 760px;
+        }
+        @include respond-to(md) {
+            max-width: 980px;
+        }
+        @include respond-to(lg) {
+            max-width: 1170px;
+        }
     }
-
-    @include respond-to(sm) {
-        max-width: 760px;
-    }
-
-    @include respond-to(md) {
-        max-width: 980px;
-    }
-
-    @include respond-to(lg) {
-        max-width: 1170px;
-    }
-  }
 }

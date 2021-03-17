@@ -1,0 +1,20 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 11px 28px;
+    outline: none;
+    border: 1px solid inherit;
+    border-radius: 4em;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: -0.56px;
+    cursor: pointer;
+
+    &--primary {
+        background-color: var(--clr-1);
+        color: var(--clr-2);
+    }
+}

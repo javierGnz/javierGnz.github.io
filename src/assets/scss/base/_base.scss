@@ -1,24 +1,25 @@
 :root {
-  --clr-1: #f4f1de;
-  --clr-2: #3d405b;;
-  --ff-head: 'Proza Libre', sans-serif;
-  --ff-body: 'Open Sans', sans-serif;
-  --vpw: 100vw;
-  --vph: 100vh;
-  --vpd: 0;
-  --vpdr: 0;
+    --clr-1: #f4f1de;
+    --clr-2: #3d405b;
+    --ff-head: 'Proza Libre', sans-serif;
+    --ff-body: 'Open Sans', sans-serif;
+    --vpw: 100vw;
+    --vph: 100vh;
+    --vpd: 0;
+    --vpdr: 0;
 }
 
 html {
-  background: #fff;
-  font-size: 16px;
+    background: #fff;
+    font-size: 16px;
 }
 
 body {
-  min-height: 100vh;
-  font-family: var(--ff-body);
-  color: var(--clr-2);
-  position: relative;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    min-height: 100vh;
+    color: var(--clr-2);
+    font-family: var(--ff-body);
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }

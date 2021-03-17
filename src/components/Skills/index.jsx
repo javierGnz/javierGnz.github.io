@@ -8,12 +8,8 @@ import './styles.scss'
 const Skills = () => {
     return (
         <div id="skills" className="skills">
-            <Title
-                title={'Habilidades'}
-                subtitle={
-                    'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
-                }
-            />
+            <Title title={'Habilidades'} />
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
             <Tabs>
                 <TabPane name="Tab 1" key="1">
                     <Item />

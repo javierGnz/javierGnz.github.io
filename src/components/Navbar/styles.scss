@@ -1,8 +1,8 @@
-@import '../../assets/scss/abstracts/mixins.scss';
+@import '../../assets/scss/abstracts/mixins';
 
 .navbar {
     @include respond-to(sm) {
-        border-bottom: 1px solid rgba(0,0,0,0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     &__content {
