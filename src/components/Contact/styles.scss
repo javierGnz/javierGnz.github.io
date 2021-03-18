@@ -1,5 +1,22 @@
+@import '../../assets/scss/abstracts/mixins';
+
 .contact {
-    margin-bottom: 4rem;
+    margin: 0 calc(-50vw + 50%);
+    padding: 3.5rem 0;
+    width: 100vw;
+    background-color: #f0f0f1;
+
+    @include respond-to(xs) {
+        padding: 4.5rem 0;
+    }
+
+    @include respond-to(md) {
+        padding: 5.25rem 0;
+    }
+
+    @include respond-to(lg) {
+        padding: 6rem 0;
+    }
 
     p {
         margin-bottom: 3rem;
@@ -8,6 +25,25 @@
             color: var(--clr-1);
             text-decoration: none;
             font-weight: 600;
+        }
+    }
+
+    &__container {
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0 1rem;
+
+        @include respond-to(xs) {
+            max-width: 560px;
+        }
+        @include respond-to(sm) {
+            max-width: 760px;
+        }
+        @include respond-to(md) {
+            max-width: 980px;
+        }
+        @include respond-to(lg) {
+            max-width: 1170px;
         }
     }
 

@@ -1,3 +1,13 @@
+@import '../../assets/scss/abstracts/mixins';
+
 .about {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+
+    @include respond-to(xs) {
+        margin-bottom: 5rem;
+    }
+
+    @include respond-to(md) {
+        margin-bottom: 6rem;
+    }
 }

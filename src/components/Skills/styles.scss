@@ -1,3 +1,68 @@
+@import '../../assets/scss/abstracts/mixins';
+
 .skills {
-    margin-bottom: 2rem;
+    margin: 0 calc(-50vw + 50%);
+    margin-bottom: 4rem;
+    padding: 3.5rem 0;
+    width: 100vw;
+    background-color: #f0f0f1;
+
+    @include respond-to(xs) {
+        padding: 4.5rem 0;
+        margin-bottom: 5rem;
+    }
+
+    @include respond-to(md) {
+        padding: 5.25rem 0;
+        margin-bottom: 6rem;
+    }
+
+    @include respond-to(lg) {
+        padding: 6rem 0;
+    }
+
+    .font-wght-300 {
+        @include respond-to(md) {
+            letter-spacing: -0.25px;
+            font-size: 1.15rem;
+        }
+        @include respond-to(lg) {
+            font-size: 1.235rem;
+        }
+    }
+
+    &__container {
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0 1rem;
+
+        @include respond-to(xs) {
+            max-width: 560px;
+        }
+        @include respond-to(sm) {
+            max-width: 760px;
+        }
+        @include respond-to(md) {
+            max-width: 980px;
+        }
+        @include respond-to(lg) {
+            max-width: 1170px;
+        }
+
+        .tabs {
+            margin-top: 2.5rem;
+
+            @include respond-to(xs) {
+                margin-top: 3rem;
+            }
+
+            @include respond-to(md) {
+                margin-top: 3.475rem;
+            }
+
+            @include respond-to(lg) {
+                margin-top: 3.875rem;
+            }
+        }
+    }
 }

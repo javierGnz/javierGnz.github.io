@@ -1,7 +1,15 @@
 @import '../../assets/scss/abstracts/mixins';
 
 .work {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+
+    @include respond-to(xs) {
+        margin-bottom: 5rem;
+    }
+
+    @include respond-to(md) {
+        margin-bottom: 6rem;
+    }
 
     .font-wght-300 {
         @include respond-to(md) {
@@ -18,11 +26,12 @@
         margin-top: 2.75rem;
 
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 2.25rem;
 
         @include respond-to(sm) {
             margin-top: 3.15rem;
             grid-template-columns: repeat(auto-fit, minmax(calc(50% - 2rem), 1fr));
+            gap: 2.75rem;
         }
         @include respond-to(lg) {
             margin-top: 4rem;
