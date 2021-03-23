@@ -1,10 +1,18 @@
+@import '../../assets/scss/abstracts/mixins';
+
 .item {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
     padding: 1rem;
+    height: 10rem;
     background-color: #fff;
-    border: 1px solid var(--clr-2);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+    @include respond-to(xs) {
+        height: 12rem;
+    }
 
     &__icon {
         margin-bottom: 1rem;

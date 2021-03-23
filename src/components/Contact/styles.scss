@@ -18,16 +18,6 @@
         padding: 6rem 0;
     }
 
-    p {
-        margin-bottom: 3rem;
-
-        a {
-            color: var(--clr-1);
-            text-decoration: none;
-            font-weight: 600;
-        }
-    }
-
     &__container {
         margin-right: auto;
         margin-left: auto;
@@ -44,6 +34,39 @@
         }
         @include respond-to(lg) {
             max-width: 1170px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+
+        @include respond-to(sm) {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+
+    &__text {
+        font-weight: 300;
+        margin-bottom: 3rem;
+
+        a {
+            color: var(--clr-1);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @include respond-to(sm) {
+            width: 50%;
+            margin-bottom: 0;
+        }
+        @include respond-to(md) {
+            letter-spacing: -0.25px;
+            font-size: 1.15rem;
+        }
+        @include respond-to(lg) {
+            font-size: 1.235rem;
         }
     }
 
@@ -68,6 +91,10 @@
                     opacity: 0.7;
                 }
             }
+        }
+
+        @include respond-to(sm) {
+            width: 50%;
         }
     }
 }

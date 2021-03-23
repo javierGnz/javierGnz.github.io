@@ -1,13 +1,70 @@
 @import '../../assets/scss/abstracts/mixins';
 
 .about {
-    margin-bottom: 4rem;
+    margin-bottom: 1.5rem;
 
     @include respond-to(xs) {
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
+    }
+    @include respond-to(md) {
+        margin-bottom: 4rem;
     }
 
-    @include respond-to(md) {
-        margin-bottom: 6rem;
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__info {
+        width: 100%;
+        flex-grow: 1;
+        margin-bottom: 3rem;
+
+        @include respond-to(sm) {
+            width: 50%;
+            margin-right: 10%;
+        }
+
+        @include respond-to(md) {
+            margin-right: auto;
+        }
+    }
+
+    &__text {
+        font-weight: 300;
+
+        @include respond-to(md) {
+            letter-spacing: -0.25px;
+            font-size: 1.15rem;
+        }
+        @include respond-to(lg) {
+            font-size: 1.235rem;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 1.36rem;
+        }
+    }
+
+    &__bg {
+        width: 100%;
+        text-align: center;
+
+        @include respond-to(sm) {
+            width: 40%;
+        }
+
+        @include respond-to(md) {
+            width: 50%;
+        }
+
+        svg {
+            width: 100%;
+            max-height: 340px;
+
+            @include respond-to(md) {
+                max-height: 426px;
+            }
+        }
     }
 }
