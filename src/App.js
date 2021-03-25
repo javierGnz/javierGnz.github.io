@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { gsap } from 'gsap'
 import './assets/scss/app.scss'
 import Navbar from './components/Navbar'
 import Header from './components/Header'
@@ -9,20 +10,22 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 const App = () => {
-    const rzs = () => {
-        let vpw = window.innerWidth 
-        let vph = window.innerHeight
-        let vpd = parseInt(Math.sqrt(vpw * vpw + vph * vph) + 1)
-        document.documentElement.style.setProperty("--vpw", "".concat(vpw, "px"))
-        document.documentElement.style.setProperty("--vph", "".concat(vph, "px"))
-        document.documentElement.style.setProperty("--vpd", "".concat(vpd, "px"))
-        document.documentElement.style.setProperty("--vpdr", "".concat(vpd / 32, 3))
+    const initPage = () => {
+        gsap.fromTo(
+            '.wrapper__overlay',
+            { y: '0'},
+            { y: '-100%', ease: 'power4.out', duration: 2 }
+        )
+        setTimeout(() => {document.querySelector('body').classList.remove('no-scrolling')}, 2300);
     }
-    window.onresize = () => {
-        rzs()
-    }
+
+    useEffect(() => {
+        initPage()
+    }, [])
+
     return (
         <div className="wrapper">
+            <div className="wrapper__overlay" />
             <Navbar />
             <Header />
             <div className="wrapper__content">

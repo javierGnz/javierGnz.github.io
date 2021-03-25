@@ -1,7 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { gsap } from 'gsap'
 import './styles.scss'
 
 const Header = () => {
+    useEffect(() => {
+        gsap.from('.header', {
+            y: 40,
+            ease: "power4.out",
+            duration: 1.75,
+            opacity: 0
+        })
+    }, [])
+
   return (
     <div className="header">
       <div className="header__intro">

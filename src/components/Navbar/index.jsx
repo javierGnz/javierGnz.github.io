@@ -1,8 +1,17 @@
-import React from 'react'
-import './styles.scss'
+import React, { useEffect } from 'react'
+import { gsap } from 'gsap'
 import Menu from '../Menu'
+import './styles.scss'
 
 const Navbar = () => {
+    useEffect(() => {
+        // gsap.from('.navbar', {
+        //     y: -40,
+        //     ease: "power4.out",
+        //     duration: 2,
+        //     opacity: 0
+        // })
+    }, [])
     return (
         <div className="navbar">
             <div className="navbar__content">

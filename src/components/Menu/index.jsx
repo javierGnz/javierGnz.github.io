@@ -7,7 +7,7 @@ const Menu = () => {
   const buttonRef = useRef(0)
   const overlayRef = useRef(0)
   const menuListRef = useRef(0)
-  const [openMenu, setOpenMenu] = useState(false)
+  const [openMenu, setOpenMenu] = useState()
 
   useEffect(() => {
     tl.to(overlayRef.current, 0.7, { ease: 'power4.inOut', y: 0})
@@ -25,7 +25,7 @@ const Menu = () => {
     if (openMenu) {
       tl.play()
     } else {
-      tl.reverse()
+      tl.reverse(0.7)
     }
   }, [openMenu])
 
@@ -51,17 +51,17 @@ const Menu = () => {
         className="menu__list"
         ref={menuListRef}
       >
-        <a className="menu__item" href="#data">
-          trabajos
+        <a className="menu__item menu__item--work" href="#work">
+            <span>trabajos</span>
         </a>
-        <a className="menu__item" href="#data">
-          habilidades
+        <a className="menu__item menu__item--skills" href="#skills">
+            <span>habilidades</span>
         </a>
-        <a className="menu__item" href="#data">
-          sobre mi
+        <a className="menu__item menu__item--about" href="#about">
+            <span>sobre mi</span>
         </a>
-        <a className="menu__item" href="#data">
-          hablemos
+        <a className="menu__item menu__item--contact" href="#contact">
+            <span>hablemos</span>
         </a>
       </div>
     </div>

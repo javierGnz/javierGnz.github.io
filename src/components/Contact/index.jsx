@@ -11,8 +11,9 @@ const Contact = () => {
                     <p className="contact__text">
                         Si deseas comunicarte conmigo por alguna oferta, pedido o
                         algo más, lo primero seria enviarme un{' '}
-                        <a href="mailto:gonzaleztorojavier@gmail.com">email</a> o
-                        conectarte conmigo en alguna de mis redes sociales.
+                        <a className="text-link" href="mailto:gonzaleztorojavier@gmail.com">
+                            <span>email</span>
+                        </a> o conectarte conmigo en alguna de mis redes sociales.
                     </p>
                     <ul className="contact__social">
                         <li>
@@ -28,29 +29,18 @@ const Contact = () => {
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
                                 >
-                                    <g clipPath="url(#clip0)">
-                                        <path
-                                            d="M20.9947 21V20.9991H21V13.2973C21 9.52957 20.1889 6.6272 15.7841 6.6272C13.6666 6.6272 12.2456 7.7892 11.6655 8.89082H11.6042V6.97895H7.42786V20.9991H11.7766V14.0568C11.7766 12.229 12.1231 10.4614 14.3867 10.4614C16.6171 10.4614 16.6504 12.5474 16.6504 14.1741V21H20.9947Z"
-                                            fill="#272643"
-                                        />
-                                        <path
-                                            d="M0.346497 6.97998H4.7005V21.0001H0.346497V6.97998Z"
-                                            fill="#272643"
-                                        />
-                                        <path
-                                            d="M2.52175 0C1.12962 0 0 1.12963 0 2.52175C0 3.91388 1.12962 5.06713 2.52175 5.06713C3.91387 5.06713 5.0435 3.91388 5.0435 2.52175C5.04262 1.12963 3.913 0 2.52175 0V0Z"
-                                            fill="#272643"
-                                        />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0">
-                                            <rect
-                                                width="21"
-                                                height="21"
-                                                fill="white"
-                                            />
-                                        </clipPath>
-                                    </defs>
+                                    <path
+                                        d="M20.9947 21V20.9991H21V13.2973C21 9.52957 20.1889 6.6272 15.7841 6.6272C13.6666 6.6272 12.2456 7.7892 11.6655 8.89082H11.6042V6.97895H7.42786V20.9991H11.7766V14.0568C11.7766 12.229 12.1231 10.4614 14.3867 10.4614C16.6171 10.4614 16.6504 12.5474 16.6504 14.1741V21H20.9947Z"
+                                        fill="#272643"
+                                    />
+                                    <path
+                                        d="M0.346497 6.97998H4.7005V21.0001H0.346497V6.97998Z"
+                                        fill="#272643"
+                                    />
+                                    <path
+                                        d="M2.52175 0C1.12962 0 0 1.12963 0 2.52175C0 3.91388 1.12962 5.06713 2.52175 5.06713C3.91387 5.06713 5.0435 3.91388 5.0435 2.52175C5.04262 1.12963 3.913 0 2.52175 0V0Z"
+                                        fill="#272643"
+                                    />
                                 </svg>
                             </a>
                         </li>
