@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react'
-import { gsap } from 'gsap'
+// import React, { useEffect } from 'react'
+// import { gsap } from 'gsap'
+import React from 'react'
 import './styles.scss'
 
 const Header = () => {
