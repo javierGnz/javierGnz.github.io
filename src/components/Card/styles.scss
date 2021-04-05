@@ -1,40 +1,63 @@
+@import '../../assets/scss/abstracts/mixins';
+
 .card {
-    display: block;
-    padding: 1rem;
-    color: var(--clr-1);
-    overflow: hidden;
     position: relative;
-    min-height: 27.5rem;
-    text-decoration: none;
+    display: block;
+    overflow: hidden;
+    padding: 1rem;
+    max-height: 458px;
+    height: 100vh;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    color: #0d0d0d;
+    text-decoration: none;
+
+    &:nth-child(1) {
+        background-color: #f1feff;
+    }
+
+    &:nth-child(2) {
+        background-color: #983c5e;
+    }
+
+    &:nth-child(3) {
+        background-color: #00beff;
+    }
+
+    &:nth-child(4) {
+        background-color: #ffedc2;
+    }
+    
+    @include respond-to(md) {
+        max-height: 650px;
+        padding: 2rem;
+    }
 
     &__img {
-        left: 0;
-        top: 0;
         position: absolute;
-        z-index: -1;
-        height: 100%;
+        bottom: 0;
+        left: 0;
         width: 100%;
-        object-fit: cover;
+        height: 100%;
         transition: all 0.3s linear;
+        pointer-events: none;
+
+        object-fit: cover;
     }
 
     &__brand {
-        text-transform: uppercase;
-        font-weight: 100;
-        opacity: 0.75;
-        font-size: 0.75rem;
-        margin-bottom: 0.25rem;
+        position: relative;
+        font-weight: 600;
+        letter-spacing: -1px;
+        font-size: 1.45rem;
+        font-family: var(--ff-head);
     }
 
     &__text {
-        font-weight: 600;
-        margin-bottom: 2rem;
-        font-size: 1.3125rem;
-        line-height: 1.5;
+        position: relative;
+        font-weight: 100;
     }
 
-    &:hover &__img {
-        transform: scale(1.1);
-    }
+    // &:hover &__img {
+    //     transform: scale(1.1);
+    // }
 }

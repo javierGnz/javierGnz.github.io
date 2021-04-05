@@ -11,12 +11,16 @@ import Footer from './components/Footer'
 
 const App = () => {
     const initPage = () => {
+        document.querySelector('html').scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        })
         gsap.fromTo(
             '.wrapper__overlay',
-            { y: '0'},
+            { y: '0' },
             { y: '-100%', ease: 'power4.out', duration: 2 }
         )
-        setTimeout(() => {document.querySelector('body').classList.remove('no-scrolling')}, 2300);
     }
 
     useEffect(() => {
@@ -25,7 +29,9 @@ const App = () => {
 
     return (
         <div className="wrapper">
-            <div className="wrapper__overlay" />
+            <div className="wrapper__overlay">
+                <h1>Javier Gonzalez</h1>
+            </div>
             <Navbar />
             <Header />
             <div className="wrapper__content">

@@ -9,6 +9,11 @@ const Menu = () => {
   const menuListRef = useRef(0)
   const [openMenu, setOpenMenu] = useState()
 
+  const toggle = (state) => {
+    if (state) return tl.play()
+    if (!state) return tl.reverse(0.7)
+  }
+
   useEffect(() => {
     tl.to(overlayRef.current, 0.7, { ease: 'power4.inOut', y: 0})
     .to(menuListRef.current, {visibility: 'visible'})
@@ -22,11 +27,11 @@ const Menu = () => {
   }, [])
 
   useEffect(() => {
-    if (openMenu) {
-      tl.play()
-    } else {
-      tl.reverse(0.7)
+    if (openMenu == null) {
+        return
     }
+    toggle(openMenu)
+
   }, [openMenu])
 
   const toggleMenu = () => {

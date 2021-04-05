@@ -3,14 +3,14 @@ import { gsap } from 'gsap'
 import './styles.scss'
 
 const Header = () => {
-    useEffect(() => {
-        gsap.from('.header', {
-            y: 40,
-            ease: "power4.out",
-            duration: 1.75,
-            opacity: 0
-        })
-    }, [])
+    // useEffect(() => {
+    //     gsap.from('.header', {
+    //         y: 40,
+    //         ease: "power4.out",
+    //         duration: 2.75,
+    //         opacity: 0
+    //     })
+    // }, [])
 
   return (
     <div className="header">
@@ -20,7 +20,7 @@ const Header = () => {
           <h1>Javier Gonzalez.</h1>
         </div>
         <div className="header__text">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor fugiat nostrum, possimus esse debitis dolores.</p>
+          <p>Un desarrollador web que crea y diseña aplicaciones con una consistencia y conciencia.</p>
         </div>
       </div>
       <div className="header__img">

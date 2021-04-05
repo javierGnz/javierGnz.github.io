@@ -10,35 +10,41 @@
         @include respond-to(xs) {
             margin-bottom: 1.75rem;
         }
+        @include respond-to(md) {
+            margin-bottom: 2.25rem;
+        }
+        @include respond-to(lg) {
+            margin-bottom: 2.5rem;
+        }
     }
 
     &__nav-item {
-        cursor: pointer;
         position: relative;
-        
+        cursor: pointer;
+
         &:not(:last-child) {
             margin-right: 1rem;
         }
 
         &::before {
             position: absolute;
-            content: '';
-            display: block;
             bottom: -8px;
+            display: block;
             width: 100%;
             height: 3px;
             background-color: var(--clr-1);
-            transition: all .2s cubic-bezier(.175,.885,.32,1.275);
-            transform: translate3d(0,5px,0);
+            content: '';
             opacity: 0;
+            transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transform: translate3d(0, 5px, 0);
         }
 
         &--active {
             color: var(--clr-1);
 
             &::before {
-                transform: translateZ(0) scale3d(1.05,1.05,1.05) rotate(1deg);
                 opacity: 1;
+                transform: translateZ(0) scale3d(1.05, 1.05, 1.05) rotate(1deg);
             }
         }
     }
@@ -48,18 +54,17 @@
     }
 
     &__content-item {
+        display: grid;
         flex-grow: 1;
         flex-shrink: 0;
         width: 100%;
-        display: grid;
+
         gap: 1rem;
         grid-template-columns: repeat(auto-fit, calc(50% - 0.5rem));
-
         @include respond-to(xs) {
             gap: 2rem;
             grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
         }
-
         @include respond-to(md) {
             grid-template-columns: repeat(auto-fit, minmax(10rem, 12.625rem));
         }
