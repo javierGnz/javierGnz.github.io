@@ -12,7 +12,7 @@ const Work = () => {
         <div id="work" className="work">
             <Title title={'Trabajos'} />
             <p className="font-wght-300">
-                Una seleccion de algunos de mis trabajos que he realizado tanto como empleado y freelancer.
+                Una seleccion de algunos trabajos que he realizado tanto como empleado y como independiente.
             </p>
             <div className="work__items">
                 <Card title={'BernyCare'} about={'Tratamientos y cuidados para pacientes intensivos'} img={bernycare_notebook} link={'https://www.bernycare.cl/'} />
