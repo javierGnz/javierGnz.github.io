@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6b6b15ce.chunk.css",
+    "main.js": "/static/js/main.bd58526d.chunk.js",
+    "main.js.map": "/static/js/main.bd58526d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a56b5c78.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a56b5c78.js.map",
+    "static/js/2.8580212a.chunk.js": "/static/js/2.8580212a.chunk.js",
+    "static/js/2.8580212a.chunk.js.map": "/static/js/2.8580212a.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.6b6b15ce.chunk.css.map": "/static/css/main.6b6b15ce.chunk.css.map",
+    "static/js/2.8580212a.chunk.js.LICENSE.txt": "/static/js/2.8580212a.chunk.js.LICENSE.txt",
+    "static/media/berny-care.f7016085.png": "/static/media/berny-care.f7016085.png",
+    "static/media/iquique.3c73e1b5.png": "/static/media/iquique.3c73e1b5.png",
+    "static/media/las condes.edfacbde.png": "/static/media/las condes.edfacbde.png",
+    "static/media/sudaca.92f89f58.png": "/static/media/sudaca.92f89f58.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a56b5c78.js",
+    "static/js/2.8580212a.chunk.js",
+    "static/css/main.6b6b15ce.chunk.css",
+    "static/js/main.bd58526d.chunk.js"
+  ]
+}
